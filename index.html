@@ -2,124 +2,38 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>Знакомство с html тегами часть №3</title>
+		<title>css  #5</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<form action="#" method="username" enctype="multipart/form-data">
-			<h1>Анкета для оценки качества жизни населения</h1>
-			<p class="red">Поля, отмеченные звездочкой(*), обязательны для заполнения!</p>
-			<div>
-				<div>
-					<h3>Город проживания<font color="red"> *</font></h3>
+		<div class="content">
+			<div class="content-top">
+				<div class="content-top__category">Travel</div>
+				<h1 class="content-top__title">
+					Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. 
+				</h1>
+			</div>
+			<div class="content__image">
+				<img src="img/CentrFons.jpg" alt="" />
+			</div>
+			<div class="content-bottom">
+				<div class="content-bottom__text">
+					<p>Donec aredsed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla.</p>
+               <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
 				</div>
-				<div>
-					<input tabindex="1"  type="text">
+				<div class="content-bottom-info">
+					<ul class="content-bottom-info-list">
+						<li>Put on this page information about your product</li>
+						<li>A detailed description of your product</li>
+						<li>Tell us about the advantages and merits</li>
+						<li>Associate the page with the payment system</li>
+					</ul>
+					<a target="_blank" href="https://vk.com/go_od_king" class="content-bottom-info__link">
+						<span>Full Story</span>
+					</a>
 				</div>
 			</div>
-			<div>
-				<div>
-					<h3>Ваш пол<font color="red"> *</font></h3>
-				</div>
-				<div>
-					<input tabindex="2" type="radio" name="gender" value="male"> Мужской
-				</div>
-				<div>
-					<input tabindex="2" type="radio" name="gender" value="female"> Женский
-				</div>
-			</div>
-			<div>
-				<div>
-					<h3>Ваш возраст<font color="red"> *</font></h3>
-				</div>
-				<div>
-					<input tabindex="3" type="radio" name="age" value="year"> 18-29
-				</div>
-				<div>
-					<input tabindex="3" type="radio" name="age" value="year"> 30-39
-				</div>
-				<div>
-					<input tabindex="3" type="radio" name="age" value="year"> 40-49
-				</div>
-				<div>
-					<input tabindex="3" type="radio" name="age" value="year"> 50-59
-				</div>
-				<div>
-					<input tabindex="3" type="radio" name="age" value="year"> 50-69
-				</div>
-				<div>
-					<input tabindex="3" type="radio" name="age" value="year"> старше 70
-				</div>
-			</div>
-			<div>
-				<div>
-					<h3>Ваше образование<font color="red"> *</font></h3>
-				</div>
-				<div>
-				   <select tabindex="4" name="education">
-					   <option value="incomplete">Неполное среднее</option>
-					   <option value="average">Cреднее / Cредне-техническое  </option>
-					   <option value="unfinished">Незаконченное высшее</option>
-					   <option value="higher">Высшее</option>
-					   <option value="scientific">Два высших или научная степень</option>
-				   </select>
-				</div>
-			</div>
-			<div>
-				<div>
-					<h3>Сфера профессиональной деятельности<font color="red"> *</font></h3>
-				</div>
-				<div>
-					<input tabindex="5" type="checkbox" name="sphere" value="yes"> Предприятие государственного сектора  
-				</div>
-				<div>
-					<input tabindex="6" type="checkbox" name="municipal" value="yes"> Муниципальное хозяйство 
-				</div>
-				<div>
-					<input tabindex="7" type="checkbox" name="healthcare" value="yes"> Здравоохранение  
-				</div>
-				<div>
-					<input tabindex="8" type="checkbox" name="financial" value="yes"> Гос. (муницип.) служащий  
-				</div>
-				<div>
-					<input tabindex="9" type="checkbox" name="employee" value="yes"> Пенсионер  
-				</div>
-				<div>
-					<input tabindex="10" type="checkbox" name="retiree" value="yes"> Неработающий инвалид   
-				</div>
-				<div>
-					<input tabindex="11" type="checkbox" name="notworking" value="yes"> Частное, акционерное предприятие  
-				</div>
-			</div>
-			<div>
-				<div>
-					<h3>Если Вы в чем-то не удовлетворены качеством мед обслуживания, то с чем это связано? (Можно выбрать несколько вариантов ответа)<font color="red"> *</font></h3>
-				</div>
-				<div>
-					<input tabindex="12" type="checkbox" name="bad" value="yes">Плохая организация работы мед. учреждений (очереди, невозможность попасть на прием в удобное время, опоздания специалистов и т.д.)  
-				</div>	
-				<div>
-					<input tabindex="13" type="checkbox" name="low" value="yes">Низкая квалификация, некомпетентность специалистов  
-				</div>
-				<div>
-					<input tabindex="14" type="checkbox" name="rudeness" value="yes"> Хамство, невнимательное отношение медработников к пациентам  
-				</div>
-			</div>
-			<div>
-				<div>
-					<h3>Дополнительная информация</h3>
-					<textarea tabindex="15" placeholder="Если у вас есть дополнительная информация которой вы хотели бы поделиться пишите сюда и можете приложить необходимый файл" name="text"></textarea>
-				</div>
-			</div>
-			<div>
-				<input  tabindex="16" type="file">
-			</div>
-			<br>
-			<div>
-				<button tabindex="17" type="submit">Готово</button>
-				<button tabindex="18" type="reset">Всё по новой</button>
-			</div>
-		</form>
+		</div>
 	</body>
 </html>
